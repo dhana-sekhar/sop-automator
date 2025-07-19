@@ -81,11 +81,14 @@ Faster and cheaper than GPT-4, with reliable reasoning and tool selection capabi
 > - OpenAI API Key (set via `OPENAI_API_KEY` env variable)
 
 ```bash
-# Install dependencies
+# Install dependencies in traditional way...
 pip install -r requirements.txt
 
+# Install dependencies blazing fast using UV
+uv sync
+
 # Run the agent
-python sop_agent.py
+python main.py
 ```
 
 ---
